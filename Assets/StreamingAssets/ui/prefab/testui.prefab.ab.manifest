@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 214914138
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f6c674967861852d545952f21f43cd03
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b5071d9f6a28e394e39317a17f9379da
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/BuildResources/UI/Prefab/TestUI.prefab
+Dependencies: []

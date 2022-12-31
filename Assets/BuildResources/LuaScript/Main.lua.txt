@@ -1,0 +1,19 @@
+print("lua Main")
+local group = 
+{
+    "Main",
+    "UI",
+    "Box"
+}
+require("InitClass")
+require("ItemInfo")
+require("PlayerInfo")
+require("BasePanel")
+require("MainPanel")
+require("BagPanel")
+require("ItemCell")
+Manager.UI:SetUIGroup(group)
+
+Manager.UI:OpenUI("TestUI","UI","test")
+PlayerInfo:Init()
+MainPanel:ShowMe()

@@ -64,7 +64,7 @@ public class UIManager : MonoBehaviour
     /// </summary>
     /// <param name="uiName">要打开UI资源的名字</param>
     /// <param name="luaName">Lua模拟MonoBehaviour使用的文件</param>
-    public void OpenUI(string uiName, string group, string luaName)
+    public void OpenUI(string uiName, string group, string luaName, Vector3 position = default, Action<Object> action = null)
     {
         GameObject ui = null;
         Transform parent = GetUIGroup(group);
@@ -80,10 +80,12 @@ public class UIManager : MonoBehaviour
          {
              ui = Instantiate(obj) as GameObject;
              ui.transform.SetParent(parent, false);
+             ui.transform.position = position;
              m_UI.Add(uiName, ui);
              UILogic uiLogic = ui.AddComponent<UILogic>();
              uiLogic.Init(luaName);
              uiLogic.OnOpen();
+             action?.Invoke(obj);
          });
     }
 }

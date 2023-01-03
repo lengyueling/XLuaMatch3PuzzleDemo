@@ -11,7 +11,6 @@ public class GameStart : MonoBehaviour
         Manager.Event.Subscribe(1, OnLuaInit);
         DontDestroyOnLoad(this);
         Manager.Lua.Init();
-
     }
 
     void OnLuaInit(object args)

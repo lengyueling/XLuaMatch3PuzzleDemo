@@ -40,24 +40,30 @@ function OnInit()
         for y=1,Grid.yDim do 
             Grid.backGround = GameObject.Instantiate(Grid.piecePrefabs.BackGround, Vector3(x*103-462,y*103-462,0), Quaternion.identity)
             Grid.backGround.transform:SetParent(GridLayer,false)
-            print()
+            Grid.backGround.name = x..":"..y
             rad = Random.Range(1,6)
             if rad < 2 then
-                Grid.red = GameObject.Instantiate(Grid.piecePrefabs.Red)
-                Grid.red.transform:SetParent(Grid.backGround.transform, false)
+                UIManager:InsUI(Grid.piecePrefabs.Red.name,"Grid","test", function(obj)
+                    obj.transform:SetParent(Grid.backGround.transform,false)
+                end)
             elseif rad < 3 then
-                Grid.green = GameObject.Instantiate(Grid.piecePrefabs.Green)
-                Grid.green.transform:SetParent(Grid.backGround.transform, false)
+                UIManager:InsUI(Grid.piecePrefabs.Green.name,"Grid","test", function(obj)
+                    obj.transform:SetParent(Grid.backGround.transform,false)
+                end)
             elseif rad < 4 then
-                Grid.blue = GameObject.Instantiate(Grid.piecePrefabs.Blue)
-                Grid.blue.transform:SetParent(Grid.backGround.transform, false)
+                UIManager:InsUI(Grid.piecePrefabs.Blue.name,"Grid","test", function(obj)
+                    obj.transform:SetParent(Grid.backGround.transform,false)
+                end)
             elseif rad < 5 then
-                Grid.yellow = GameObject.Instantiate(Grid.piecePrefabs.Yellow)
-                Grid.yellow.transform:SetParent(Grid.backGround.transform, false)
+                UIManager:InsUI(Grid.piecePrefabs.Yellow.name,"Grid","test", function(obj)
+                    obj.transform:SetParent(Grid.backGround.transform,false)
+                end)
             elseif rad < 6 then
-                Grid.purple = GameObject.Instantiate(Grid.piecePrefabs.Purple)
-                Grid.purple.transform:SetParent(Grid.backGround.transform, false)
+                UIManager:InsUI(Grid.piecePrefabs.Purple.name,"Grid","test", function(obj)
+                    obj.transform:SetParent(Grid.backGround.transform,false)
+                end)
             end
+            
         end
     end
 

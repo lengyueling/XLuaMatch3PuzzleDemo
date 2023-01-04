@@ -36,6 +36,13 @@ public class Manager : MonoBehaviour
         get { return _event; }
     }
 
+    
+    private static EntityManager _entity;
+    public static EntityManager Entity
+    {
+        get { return _entity; }
+    }
+
     private void Awake()
     {
         _resource = this.gameObject.AddComponent<ResourceManager>();
@@ -43,6 +50,7 @@ public class Manager : MonoBehaviour
         _ui = this.gameObject.AddComponent<UIManager>();
         _scene = this.gameObject.AddComponent<SceneManager>();
         _event = this.gameObject.AddComponent<EventManager>();
+        _entity = this.gameObject.AddComponent<EntityManager>();
     }
 
 }

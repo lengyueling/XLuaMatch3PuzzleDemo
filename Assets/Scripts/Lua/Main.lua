@@ -34,15 +34,27 @@ Root = GameObject.Find("Root").transform
 Manager = CS.Manager
 ResourceManager = Manager.Resource
 UIManager = Manager.UI
+EntityManager = Manager.Entity
+SceneManager = Manager.Scene
+PathUtil = CS.PathUtil
 
 --层级管理相关
-local group = 
+local ui_group = 
 {
     "Grid",
     "UI",
 }
-UIManager:SetUIGroup(group)
+
+local entity_group = 
+{
+    "Grid",
+    "Player",
+}
+UIManager:SetUIGroup(ui_group)
+EntityManager:SetEntityGroup(entity_group)
 GridLayer = GameObject.Find("Group-Grid").transform
 
 --初始化后逻辑
 UIManager:OpenUI("Grid","UI","Grid")
+--test
+-- SceneManager:ChangeScene("Scene01","test")

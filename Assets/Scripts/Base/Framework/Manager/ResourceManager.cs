@@ -190,4 +190,9 @@ public class ResourceManager : MonoBehaviour
     {
         LoadAsset(assetName, action);
     }
+
+    public void LoadPrefab(string path, Action<Object> action = null)
+    {
+        LoadAsset(path, action);
+    }
 }

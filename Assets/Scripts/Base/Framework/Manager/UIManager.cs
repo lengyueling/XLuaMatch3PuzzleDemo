@@ -64,7 +64,7 @@ public class UIManager : MonoBehaviour
     /// </summary>
     /// <param name="uiName">要打开UI资源的名字</param>
     /// <param name="luaName">Lua模拟MonoBehaviour使用的文件</param>
-    public void OpenUI(string uiName, string group, string luaName, Vector3 position = default, Action<Object> action = null)
+    public void OpenUI(string uiName, string group, string luaName, Action<Object> action = null)
     {
         GameObject ui = null;
         Transform parent = GetUIGroup(group);
@@ -80,12 +80,41 @@ public class UIManager : MonoBehaviour
          {
              ui = Instantiate(obj) as GameObject;
              ui.transform.SetParent(parent, false);
-             ui.transform.position = position;
              m_UI.Add(uiName, ui);
              UILogic uiLogic = ui.AddComponent<UILogic>();
              uiLogic.Init(luaName);
              uiLogic.OnOpen();
              action?.Invoke(obj);
+         });
+    }
+
+    public void CloseUI(string uiName)
+    {
+        GameObject ui = null;
+        //如果之前已经缓存（使用）过了这个ui则直接调用，不需要重新加载资源，生命周期只执行一次（模拟start）
+        if (m_UI.TryGetValue(uiName,out ui))
+        {
+            UILogic uILogic = ui.GetComponent<UILogic>();
+            uILogic.OnOpen();
+            uILogic.OnClose();
+            ui.SetActive(false);
+            return;
+        }
+    }
+    
+    public void InsUI(string uiName, string group, string luaName, Action<Object> action = null)
+    {
+        GameObject ui = null;
+        Transform parent = GetUIGroup(group);
+        Manager.Resource.LoadUI(uiName, (Object obj) =>
+         {
+             ui = Instantiate(obj) as GameObject;
+             ui.transform.SetParent(parent, false);
+             action?.Invoke(ui);
+             UILogic uiLogic = ui.AddComponent<UILogic>();
+             uiLogic.Init(luaName);
+             uiLogic.OnOpen();
+             
          });
     }
 }

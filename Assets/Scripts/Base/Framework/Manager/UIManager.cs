@@ -114,7 +114,6 @@ public class UIManager : MonoBehaviour
              UILogic uiLogic = ui.AddComponent<UILogic>();
              uiLogic.Init(luaName);
              uiLogic.OnOpen();
-             
          });
     }
 }

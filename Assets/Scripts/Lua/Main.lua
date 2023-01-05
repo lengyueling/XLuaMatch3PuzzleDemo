@@ -56,5 +56,3 @@ GridLayer = GameObject.Find("Group-Grid").transform
 
 --初始化后逻辑
 UIManager:OpenUI("Grid","UI","Grid")
---test
--- SceneManager:ChangeScene("Scene01","test")

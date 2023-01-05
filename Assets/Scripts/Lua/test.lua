@@ -1,6 +1,8 @@
+
 function OnInit()
     print("oninit")
     print("test")
+    print(self.name)
 end
 
 function OnOpen()

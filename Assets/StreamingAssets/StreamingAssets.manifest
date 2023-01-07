@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 3593464863
+CRC: 3995487283
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -15,59 +15,89 @@ AssetBundleManifest:
       Name: json/iteminfo.txt.ab
       Dependencies: {}
     Info_4:
-      Name: luascript/bagpanel.lua.txt.ab
+      Name: luascript/background.lua.txt.ab
       Dependencies: {}
     Info_5:
-      Name: luascript/basepanel.lua.txt.ab
+      Name: luascript/bagpanel.lua.txt.ab
       Dependencies: {}
     Info_6:
-      Name: luascript/initclass.lua.txt.ab
+      Name: luascript/basepanel.lua.txt.ab
       Dependencies: {}
     Info_7:
-      Name: luascript/itemcell.lua.txt.ab
+      Name: luascript/gamepiece.lua.txt.ab
       Dependencies: {}
     Info_8:
-      Name: luascript/iteminfo.lua.txt.ab
+      Name: luascript/grid.lua.txt.ab
       Dependencies: {}
     Info_9:
-      Name: luascript/jsonutility.lua.txt.ab
+      Name: luascript/itemcell.lua.txt.ab
       Dependencies: {}
     Info_10:
-      Name: luascript/main.lua.txt.ab
+      Name: luascript/iteminfo.lua.txt.ab
       Dependencies: {}
     Info_11:
-      Name: luascript/mainpanel.lua.txt.ab
+      Name: luascript/jsonutility.lua.txt.ab
       Dependencies: {}
     Info_12:
-      Name: luascript/object.lua.txt.ab
+      Name: luascript/main.lua.txt.ab
       Dependencies: {}
     Info_13:
-      Name: luascript/playerinfo.lua.txt.ab
+      Name: luascript/mainpanel.lua.txt.ab
       Dependencies: {}
     Info_14:
-      Name: luascript/splittools.lua.txt.ab
+      Name: luascript/object.lua.txt.ab
       Dependencies: {}
     Info_15:
-      Name: luascript/test.lua.txt.ab
+      Name: luascript/playerinfo.lua.txt.ab
       Dependencies: {}
     Info_16:
-      Name: scene/main.unity.ab
+      Name: luascript/splittools.lua.txt.ab
       Dependencies: {}
     Info_17:
-      Name: ui/prefab/bagpanel.prefab.ab
+      Name: luascript/test.lua.txt.ab
       Dependencies: {}
     Info_18:
-      Name: ui/prefab/eventsystem.prefab.ab
+      Name: model/prefab/test.prefab.ab
       Dependencies: {}
     Info_19:
-      Name: ui/prefab/itemcell.prefab.ab
+      Name: scene/main.unity.ab
       Dependencies: {}
     Info_20:
-      Name: ui/prefab/mainpanel.prefab.ab
+      Name: scene/scene01.unity.ab
       Dependencies: {}
     Info_21:
-      Name: ui/prefab/testui.prefab.ab
+      Name: ui/prefab/bagpanel.prefab.ab
       Dependencies: {}
     Info_22:
+      Name: ui/prefab/bg.prefab.ab
+      Dependencies: {}
+    Info_23:
+      Name: ui/prefab/blue.prefab.ab
+      Dependencies: {}
+    Info_24:
+      Name: ui/prefab/eventsystem.prefab.ab
+      Dependencies: {}
+    Info_25:
+      Name: ui/prefab/green.prefab.ab
+      Dependencies: {}
+    Info_26:
+      Name: ui/prefab/grid.prefab.ab
+      Dependencies: {}
+    Info_27:
+      Name: ui/prefab/itemcell.prefab.ab
+      Dependencies: {}
+    Info_28:
+      Name: ui/prefab/mainpanel.prefab.ab
+      Dependencies: {}
+    Info_29:
+      Name: ui/prefab/purple.prefab.ab
+      Dependencies: {}
+    Info_30:
+      Name: ui/prefab/red.prefab.ab
+      Dependencies: {}
+    Info_31:
+      Name: ui/prefab/yellow.prefab.ab
+      Dependencies: {}
+    Info_32:
       Name: ui/sprite/icon.spriteatlas.ab
       Dependencies: {}

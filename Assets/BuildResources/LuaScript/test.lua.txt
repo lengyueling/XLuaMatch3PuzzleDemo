@@ -1,6 +1,8 @@
+
 function OnInit()
     print("oninit")
-    print(self.transform.position)
+    print("test")
+    print(self.name)
 end
 
 function OnOpen()
@@ -13,4 +15,12 @@ end
 
 function Update()
     print("onupdate")
+end
+
+function OnShow()
+    print("onShow123")
+end
+
+function OnHide()
+    print("onHiede123")
 end

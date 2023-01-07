@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2487519930
+CRC: 2340335068
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 9e65ced6d24e0c7a865cabaf92c5ecbd
+    Hash: 98aefb71d107e66c1b935a8c23124bb6
   TypeTreeHash:
     serializedVersion: 2
     Hash: 5ad585dd02dfb5016c0dad519eab8f49
@@ -13,5 +13,5 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/BuildResources/LuaScript/InitClass.lua.txt
+- Assets/BuildResources/LuaScript/Grid.lua.txt
 Dependencies: []
